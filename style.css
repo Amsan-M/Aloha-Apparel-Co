@@ -48,13 +48,22 @@ header {
   font-size: 1rem;
 }
 
+.cartCount-container{
+  width:20px;
+  height:20px;
+
+}
+
 #cartCount{
+  
   background-color: red;
   color: white;
-  border-radius: 50px;
-  width: 18px;
-  height: 18px;
-  text-align: center;
+  border-radius: 50%;
+  width: 100%;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .top-navigation-links {
@@ -80,7 +89,7 @@ header {
   text-transform: uppercase;
   font-size: 1rem;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: 'main-light';
   font-style: bold;
 }
 
@@ -144,16 +153,18 @@ header {
 /* ===================================================================================================================== */
 
 .banner {
-  background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-  background-size: 8rem, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, center;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)) , url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+  background-size: cover,contain, cover;
+  background-repeat:no-repeat, no-repeat, no-repeat;
+  background-position: center,bottom center, center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 20rem;
+  height: 40rem;
+  z-index:1 0 2;
+
 }
 
 .new-collection p {
@@ -162,8 +173,8 @@ header {
   justify-content: center;
   display: block;
   z-index: 2;
-  font-family: PlayfairDisplay;
-  font-size: 14px;
+  font-family: 'headings';
+  font-size: 1rem;
   color: white;
 }
 
@@ -173,8 +184,8 @@ header {
   justify-content: center;
   display: block;
   z-index: 2;
-  font-family: PlayfairDisplay;
-  font-size: 14px;
+  font-family:'headings';
+  font-size: 1.5em;
   color: white;
 }
 
@@ -184,16 +195,17 @@ header {
 
 @media screen and (min-width: 600px) {
   .banner {
-    background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-    background-size: contain, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)) , url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+    background-size: cover,contain, cover;
+    background-repeat:no-repeat, no-repeat, no-repeat;
+    background-position: center,bottom center, center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 40rem;
+    z-index:1 0 2;
   }
   .new-collection p {
     display: flex;
@@ -235,9 +247,9 @@ header {
 }
 
 .men-category {
-  background-image: url(images/mens-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/mens-category.jpg);
+  background-size: cover,cover;
+  background-repeat: no-repeat, no-repeat;
   flex-grow: 2;
   height: 25%;
   width: 100%;
@@ -249,14 +261,14 @@ header {
   color: white;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
 .trends-category {
-  background-image: url(images/trends-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/trends-category.jpg);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -268,14 +280,14 @@ header {
   color: white;
   text-transform: uppercase;
   border-right: 0.25rem solid;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
 .glasses-category {
-  background-image: url(images/glasses-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/glasses-category.jpg);
+  background-size: cover, cover;
+  background-repeat:no-repeat,  no-repeat;
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -287,12 +299,12 @@ header {
   color: white;
   text-transform: uppercase;
   border-bottom: 0.25rem solid;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
 .sales-category {
-  background-image: url(images/sale-category.jpg);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/sale-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   flex-grow: 1;
@@ -307,12 +319,12 @@ header {
   text-transform: uppercase;
   border-bottom: 0.25rem solid;
   border-right: 0.25rem solid;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
 .bags-category {
-  background-image: url(images/bags-category.jpg);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/bags-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   flex-grow: 1;
@@ -326,12 +338,12 @@ header {
   color: white;
   text-transform: uppercase;
   border-bottom: 0.25rem solid;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
 .womens-category {
-  background-image: url(images/womens-category.jpg);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)),url(images/womens-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   flex-grow: 2;
@@ -344,7 +356,7 @@ header {
   font-size: 14px;
   color: white;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: 'main';
   font-size: 0.875rem;
 }
 
@@ -363,7 +375,7 @@ header {
     object-fit: contain;
   }
   .men-category {
-    background-image: url(images/mens-category.jpg);
+    /* background-image: url(images/mens-category.jpg); */
     height: 50%;
     width: 45%;
     background-size: cover;
@@ -379,11 +391,11 @@ header {
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
   .trends-category {
-    background-image: url(images/trends-category.jpg);
+    /* background-image: url(images/trends-category.jpg); */
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -399,11 +411,11 @@ header {
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
   .glasses-category {
-    background-image: url(images/glasses-category.jpg);
+    /* background-image: url(images/glasses-category.jpg); */
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -418,11 +430,11 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.25rem;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
   .sales-category {
-    background-image: url(images/sale-category.jpg);
+    /* background-image: url(images/sale-category.jpg); */
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -438,11 +450,11 @@ header {
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
   .bags-category {
-    background-image: url(images/bags-category.jpg);
+    /* background-image: url(images/bags-category.jpg); */
     height: 50%;
     width: 20%;
     background-size: cover;
@@ -458,11 +470,11 @@ header {
     margin-bottom: 0.25rem;
     border-right: 0.25rem solid;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
   .womens-category {
-    background-image: url(images/womens-category.jpg);
+    /* background-image: url(images/womens-category.jpg); */
     height: 50%;
     width: 45%;
     background-size: cover;
@@ -477,7 +489,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.25rem;
     background-position: center;
-    font-family: Raleway;
+    font-family: 'main';
     font-size: 1rem;
   }
 }
@@ -500,14 +512,14 @@ header {
 }
 
 .About h2 {
-  font-family: PlayfairDisplay;
+  font-family: 'headings-i';
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
 }
 
 .About p {
-  font-family: Raleway-Italic;
+  font-family:'main-light';
   font-size: 0.875rem;
 }
 
