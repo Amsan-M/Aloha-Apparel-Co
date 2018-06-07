@@ -1,0 +1,941 @@
+/* ===================================================================================================================== */
+
+                                            /* HEADER & NAVIGATION */
+
+/* ===================================================================================================================== */
+
+
+#shop[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 5rem;
+}
+
+.logo {
+  background-image: url(images/aloha-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  align-items: left;
+  height: 30px;
+  width: 50%;
+  order: 1;
+}
+
+.cart {
+  background-image: url(images/cart-icon.svg);
+  background-size: contain;
+  background-position: top right;
+  height: 30px;
+  width: 50%;
+  align-items: right;
+  align-content: right;
+  background-repeat: no-repeat;
+  order: 2;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 1rem;
+}
+
+#cartCount{
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+.top-navigation-links {
+  border-top: 0.15rem solid #d7d7d7;
+  list-style: none;
+  margin-top: 0.3rem;
+  text-align: center;
+  order: 3;
+  width: 100%;
+  height: 3rem;
+}
+
+.top-navigation-links li {
+  display: inline;
+}
+
+.top-navigation-links a {
+  display: inline-block;
+  /* margin-top: 5px; */
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+  color: #e2574c;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: bold;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+    /* HEADER & NAVIGATION for TABLET & DESKTOP */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+  }
+  .logo {
+    background-image: url(images/aloha-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    order: 1;
+    height: 7rem;
+    width: 7rem;
+  }
+  .cart {
+    background-image: url(images/cart-icon.svg);
+    background-size: contain;
+    height: 50px;
+    width: 15%;
+    border-right: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    order: 3;
+  }
+  .top-navigation-links {
+    border-top: none;
+    list-style: none;
+    margin-top: 0.3rem;
+    text-align: center;
+    order: 2;
+    height: 3rem;
+    width: auto;
+  }
+  .top-navigation-links li {
+    display: inline;
+  }
+  .top-navigation-links a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px;
+    color: #e2574c;
+    font-size: 16px;
+  }
+}
+
+/* ===================================================================================================================== */
+
+                                                    /* BANNER */
+
+/* ===================================================================================================================== */
+
+.banner {
+  background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+  background-size: 8rem, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+}
+
+.new-collection p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  z-index: 2;
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  color: white;
+}
+
+.new-collection h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  z-index: 2;
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* BANNER for TABLET & DESKTOP*/
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  .banner {
+    background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+  }
+  .new-collection p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    z-index: 2;
+    font-family: PlayfairDisplay;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .new-collection h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    z-index: 2;
+    font-family: PlayfairDisplay;
+    color: white;
+    font-size: 3rem;
+  }
+}
+
+/* ===================================================================================================================== */
+
+                                                    /* SHOPPING CATEGORIES  */
+
+/* ===================================================================================================================== */
+
+
+.shop {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+
+.men-category {
+  background-image: url(images/mens-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 2;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+.trends-category {
+  background-image: url(images/trends-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 45%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-right: 0.25rem solid;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+.glasses-category {
+  background-image: url(images/glasses-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 45%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 0.25rem solid;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+.sales-category {
+  background-image: url(images/sale-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 45%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 0.25rem solid;
+  border-right: 0.25rem solid;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+.bags-category {
+  background-image: url(images/bags-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 45%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 0.25rem solid;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+.womens-category {
+  background-image: url(images/womens-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 2;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 0.875rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* shopping categories for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  .shop {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    object-fit: contain;
+  }
+  .men-category {
+    background-image: url(images/mens-category.jpg);
+    height: 50%;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+  .trends-category {
+    background-image: url(images/trends-category.jpg);
+    height: 50%;
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+  .glasses-category {
+    background-image: url(images/glasses-category.jpg);
+    height: 50%;
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+  .sales-category {
+    background-image: url(images/sale-category.jpg);
+    height: 50%;
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+  .bags-category {
+    background-image: url(images/bags-category.jpg);
+    height: 50%;
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    border-right: 0.25rem solid;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+  .womens-category {
+    background-image: url(images/womens-category.jpg);
+    height: 50%;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    background-position: center;
+    font-family: Raleway;
+    font-size: 1rem;
+  }
+}
+/* ===================================================================================================================== */
+
+                                                    /* ABOUT */
+
+/* ===================================================================================================================== */
+
+
+.About {
+  display: flex;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  line-height: 2rem;
+}
+
+.About h2 {
+  font-family: PlayfairDisplay;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.About p {
+  font-family: Raleway-Italic;
+  font-size: 0.875rem;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* above all content */
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* About section tablet & desktop */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  .About h2 {
+    font-family: PlayfairDisplay;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .About p {
+    font-family: Raleway-Italic;
+    font-size: 1rem;
+  }
+  .most-loved-products {
+    width: 100%;
+    height: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+
+                                                    /* CAROUSSEL */
+
+/* ===================================================================================================================== */
+
+.most-loved-products {
+  width: 100%;
+  height: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: PlayfairDisplay;
+  font-style: italic;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* Caroussel for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  .most-loved-products {
+    font-size: 3rem;
+  }
+}
+
+.carousel {
+  width: 100%;
+  padding-bottom: 20px;
+  /* height:500px;      */
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-cell1 {
+  /* width: 30%; */
+  /* height: 500px; */
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-cell2 {
+  /* width: 30%; */
+  /* height: 500px; */
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-cell3 {
+  /* width: 30%; */
+  /* height: 500px; */
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-cell4 {
+  /* width: 30%; */
+  /* height: 500px; */
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  align-content: center;
+  align-items: center;
+  line-height: 600px;
+  font-size: 14px;
+  color: black;
+}
+
+/* =================================================================================================================== */
+
+                                                    /* SIGN-UP */
+
+/* =================================================================================================================== */
+
+@media screen and (max-width: 600px) {
+  .sign-up {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+  }
+  .sign-up-form {
+    display: flex;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sign-up-form h2 {
+    text-align: center;
+    line-height: 2rem;
+    margin-top: -0.5rem;
+    color: white;
+    font-family: Playfair;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  .sign-up-form p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+    font-family: Raleway;
+  }
+}
+
+form {
+  /* display: inline-flex;
+  position: relative;
+  width: 50%;
+  margin-top: 10%; */
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 2rem;
+  margin-top: 10%;
+}
+
+button[type="submit"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
+  /* justify-self: center; */
+  border-radius: 1rem;
+  border: 1px solid white;
+  background: #e2574c;
+  width: 40%;
+  position: absolute;
+  height: 100%;
+  padding: 0px;
+  color: white;
+  font-size: 12px;
+  line-height: 0px;
+}
+
+label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+input[type="email"] {
+  border-radius: 1.5rem;
+  border: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.sign-up-image-background {
+  background-image: url(images/wave-bkgd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 15rem;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* sign-up for tablet  */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 1240px) and (min-width: 600px) {
+  .sign-up {
+    margin-top: 2.5rem;
+  }
+  .form {
+    flex-direction: row;
+    width: 15rem;
+    margin-top: 1.5rem;
+    display: inline-flex;
+  }
+  .sign-up p {
+    color: white;
+    font-family: Raleway;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .sign-up h2 {
+    font-family: PlayfairDisplay;
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* sign-up for desktop min width:1240px   */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1240px) {
+  .sign-up {
+    /* height:30rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+  }
+  .sign-up-form {
+    display: flex;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sign-up-form h2 {
+    text-align: center;
+    line-height: 2.5rem;
+    color: white;
+    font-family: PlayfairDisplay;
+    font-size: 2rem;
+  }
+  .sign-up-form p {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    line-height: 2.25rem;
+    color: white;
+    font-family: Raleway;
+  }
+  form {
+    /* display: inline-flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 20%;
+  }
+  label {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    border-radius: 1.5rem;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  button[type="submit"] {
+    border-radius: 1rem;
+    background: #e2574c;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    padding-right: 0px;
+    margin-right: 1%;
+  }
+  .sign-up-image-background {
+    background-image: url(images/wave-bkgd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* =================================================================================================================== */
+
+/* FOOTER */
+
+/* =================================================================================================================== */
+
+
+
+footer {
+  background: #242424;
+  color: white;
+  height: 9.5rem;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0.5rem;
+}
+
+.address {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.social {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.85rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  footer li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .social ul {
+    display: flex;
+    justify-content: center;
+  }
+  .social a {
+    visibility: hidden;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* footer for tablet and desktop   */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 600px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 0.5rem;
+  }
+  .address {
+    width: 50%;
+    text-align: left;
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .social {
+    width: 15%;
+    color: white;
+    margin-top: 0.5rem;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+  }
+}
+
+footer a {
+  color: white;
+}
