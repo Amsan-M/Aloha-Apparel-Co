@@ -31,12 +31,18 @@ function validateEmail(regex) {
 // add to cart update
 
 
-var count = 0;
-var button = document.getElementById("addToCartBtn");
-var display = document.getElementById("cartCount");
 
-button.onclick = function(){
-  count++;
-  display.innerHTML = count;
-}
+$(document).ready(function(){ 
+    var count = 0;
+    var display = document.getElementById("cartCount");
+
+  $('.addToCart').bind("click", function(){
+    count++;
+      display.innerHTML = count;
+    })
+
+
+  
+
+});
 
