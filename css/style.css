@@ -195,7 +195,7 @@ header {
 
 @media screen and (min-width: 600px) {
   .banner {
-    background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
     background-size: cover,contain, cover;
     background-repeat:no-repeat, no-repeat, no-repeat;
     background-position: center,bottom center, center;
