@@ -256,7 +256,7 @@ span.header-wrapper {
 
 .about-content p {
   width: 90%;
-  font-size: 1rem;
+  font-size: 1.15rem;
   text-align: center;
   font-family: 'main-light';
 }
@@ -386,23 +386,36 @@ span.womens-category-wrapper {
 .carousel {
   width: 100%;
   height: 35rem;
-  align-content: center;
+  /* align-content: center;
   align-items: center;
-}
+  display:flex;
+  flex-direction:column;
+  */
+} 
 
 .carousel p {
   font-size: 0.8rem;
   color: #969696;
   font-family: 'main';
+  margin-bottom:3%;
+  text-align: center;
 }
 
-.carousel-cell1 {
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+.carousel h4{
   text-align: center;
+  margin-bottom:3%;
+
+}
+
+
+
+.carousel-cell1{
+
+  display: flex;
+  justify-content: center;
   align-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .carousel-cell2 {
@@ -430,7 +443,7 @@ span.womens-category-wrapper {
   text-align: center;
   align-content: center;
   align-items: center;
-}
+} 
 
 .carousel-cell:before {
   display: block;
@@ -460,6 +473,7 @@ span.womens-category-wrapper {
   text-align: center;
   line-height: 1;
 }
+
 
 .addToCart {
   background-color: black;
@@ -706,6 +720,8 @@ footer p {
 
  @media screen and (min-width: 600px) {
 
+ 
+
 } 
 
 
@@ -875,6 +891,16 @@ footer p {
     background-position: center;
   }
 
+/* carousel */
+
+.flickity-enabled .flickity-slider{
+  left:-10rem !important;
+  /* I had to use important as the position was hardcoded */
+} 
+
+
+
+
   /* sign-up section */
 
   form{
@@ -887,7 +913,72 @@ footer p {
     height: 96%;
   }
 
-  } 
+
+  /* footer */
+
+/* 
+  footer{
+    height:15rem;
+  } */
+
+  .contact{
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:auto;
+    text-align:left;
+    margin-left:2%;
+
+  }
+
+
+  .copyright,
+  .contact-link,
+  .aloha-adress{
+
+    margin-bottom:2%;
+    
+  }
+
+
+
+
+.social-mobile{
+  display:none;
+}
+
+.social-tablet{
+  display:block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  text-align: left;
+  line-height: 2rem;
+  margin-right:5%;
+
+ 
+}
+
+.social-tablet a{
+  text-transform:uppercase;
+}
+
+
+
+
+
+} 
 
 
 
