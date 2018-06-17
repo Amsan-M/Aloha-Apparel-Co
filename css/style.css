@@ -30,7 +30,7 @@ h3 {
 }
 
 h3 {
-  font-family: "main";
+  font-family: 'Raleway';
   color: white;
   font-size: 1.4em;
   color: white;
@@ -39,29 +39,32 @@ h3 {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'headings';
+  font-family: 'Playfair Display';
 }
 
 h4 {
   color: #e2574c;
-  font-family: 'headings';
+  font-family: 'Playfair Display';
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 .top-navigation-links li a {
-  font-family: 'main';
+  font-family: 'Raleway';
   text-shadow: none;
   font-size: 1rem;
 }
 
 p {
-  font-family: 'main-light';
+  font-family: 'Raleway';
+  font-weight: 300;
   text-shadow: none;
   font-size: 1rem;
 }
 
 strong {
-  font-family: 'headings-bold';
+  font-weight: bold;
+  font-family: 'Playfair Display';
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, .8);
   font-size: 2rem;
   margin-left: 0.6rem;
@@ -81,7 +84,8 @@ strong {
 .sign-up-title-wrapper h1,
 .About-Aloha h1 {
   font-size: 2rem;
-  font-family: "headings-i";
+  font-style: italic;
+  font-family: 'Playfair Display';
 }
 
 .most-loved-products h1,
@@ -275,9 +279,10 @@ span.header-wrapper {
 
 .about-content p {
   width: 90%;
-  font-size: 1.15rem;
+  font-size: 0.9rem;
   text-align: center;
-  font-family: 'main-light';
+  font-family: 'Raleway';
+  font-weight: 300;
 }
 
 /* ===================================================================================================================== */
@@ -302,7 +307,7 @@ span.men-category-wrapper {
   flex-grow: 2;
   display: flex;
   align-items: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   justify-content: center;
 }
 
@@ -315,7 +320,7 @@ span.trends-category-wrapper {
   width: 45%;
   height: 25%;
   display: flex;
-  border-right: 0.25rem solid white;
+  border-right: 0.5rem solid white;
 }
 
 .trends-category {
@@ -326,7 +331,7 @@ span.glasses-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
-  border-bottom: 0.25rem solid white;
+  border-bottom: 0.5rem solid white;
 }
 
 .glasses-category {
@@ -337,7 +342,7 @@ span.sales-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
-  border-right: 0.25rem solid #fff;
+  border-right: 0.5rem solid #fff;
 }
 
 .sales-category {
@@ -359,7 +364,7 @@ span.womens-category-wrapper {
   flex-grow: 2;
   width: 100%;
   height: 25%;
-  border-top: 0.25rem solid #fff;
+  border-top: 0.5rem solid #fff;
 }
 
 .womens-category {
@@ -407,7 +412,7 @@ span.womens-category-wrapper {
 .carousel p {
   font-size: 0.8rem;
   color: #969696;
-  font-family: 'main';
+  font-family: 'Raleway';
   margin-bottom: 3%;
   text-align: center;
 }
@@ -492,12 +497,13 @@ button[type="submit"] {
   border-radius: 1.5rem;
   border: 1px solid white;
   background: #e2574c;
-  width: 30%;
+  width: 35%;
   position: absolute;
   height: 97%;
   padding: 0px;
   color: white;
-  font-size: 12px;
+  font-size: 0.9rem;
+  font-weight:bold;
   line-height: 0px;
 }
 
@@ -548,15 +554,22 @@ footer {
   width: 100%;
 }
 
+footer i{
+  font-family: 'Playfair Display';
+  font-size: 1rem;
+  
+}
+
 footer a {
   color: white;
   font-size: 0.9rem;
   text-decoration: none;
 }
 
-footer p {
-  font-size: 0.9rem;
-}
+/* footer p {
+
+
+} */
 
 .contact {
   display: flex;
@@ -565,12 +578,15 @@ footer p {
   width: 100%;
   justify-content: center;
   align-content: center;
-  padding-top: 5%;
+  padding-top: 3%;
+  padding-bottom:3%;
   height: auto;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .address {
-  width: 100%;
+   width: 100%;
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -586,7 +602,7 @@ footer p {
 .social-mobile ul {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 40%;
   justify-content: center;
 }
 
@@ -598,6 +614,9 @@ footer p {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.contact-link a {
+  text-decoration: underline;
+}
 
 .aloha-adress {
   color: #969696;
@@ -605,6 +624,17 @@ footer p {
 
 .social-tablet {
   display: none;
+}
+
+.social-tablet i{
+  display:flex;
+}
+
+.copyright p,
+.contact-link p,
+.contact-link a,
+.aloha-adress p{
+  font-family: 'Playfair Display';
 }
 
 /* =================================================================================================================== */
@@ -619,6 +649,23 @@ footer p {
 /* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
+
+
+  /* titles */
+
+.most-loved-products h1,
+.sign-up-title-wrapper h1,
+.About-Aloha h1{
+  font-size: 2.8rem;
+  font-style: italic;
+  font-family: 'Playfair Display';
+}
+
+strong {
+  font-size: 2.8rem;
+}
+
+
   /* header */
   span.header-wrapper {
     justify-content: space-between;
@@ -674,16 +721,26 @@ footer p {
   .new-collection h1 {
     font-size: 3rem;
   }
+
+  /* about */
+  .about-content p{
+    font-size:1rem;
+  }
+
   /* shop section */
   .shop {
     height: 20rem;
     width: 100%;
   }
+
+  .shop h3{
+    font-size:2rem;
+  }
   span.men-category-wrapper {
     height: 50%;
     width: 45%;
-    margin-bottom: 0.25rem;
-    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
   span.trends-category-wrapper {
     flex-grow: 1;
@@ -706,7 +763,7 @@ footer p {
   span.womens-category-wrapper {
     width: 36%;
     height: 50%;
-    border-left: 0.25rem solid #fff;
+    border-left: 0.5rem solid #fff;
     border-top: 0rem;
   }
   .womens-category,
@@ -769,13 +826,27 @@ footer p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: auto;
+    width: 20%;
     text-align: left;
     line-height: 2rem;
     margin-right: 5%;
   }
   .social-tablet a {
     text-transform: uppercase;
+    display: inline-flex;
+    align-items:center;
+    width:100%;
+  }
+
+  .social-tablet h5{
+ 
+    font-family:'Raleway';
+    font-weight: 300;
+    text-transform:capitalize;
+  }
+
+  .social-tablet i::before{
+    width: 2rem;
   }
 }
 
@@ -788,6 +859,12 @@ footer p {
 
 
 @media screen and (min-width: 900px) {
+
+ 
+
+
+
+
   span.header-wrapper {
     justify-content: space-evenly;
   }
@@ -809,6 +886,24 @@ footer p {
 }
 
 @media screen and (min-width: 1240px) {
+
+   /* titles */
+
+.most-loved-products h1,
+.sign-up-title-wrapper h1,
+.About-Aloha h1{
+  font-size: 3.5rem;
+  font-style: italic;
+  font-family: 'Playfair Display';
+}
+
+strong {
+  font-size: 3.5rem;
+}
+
+  .new-collection h1{
+    font-size:3.5rem;
+  }
   
   .About {
     margin-bottom: 0px;
@@ -820,9 +915,15 @@ footer p {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  .about-content p{
+    font-size:1.2rem;
+  }
   .shop {
     height: 40rem;
     width: 100%;
+  }
+  .shop h3{
+    font-size:2.5rem;
   }
   .caroussel-section {
     display: flex;
@@ -845,5 +946,9 @@ footer p {
   }
   .flickity-enabled .flickity-page-dots {
     bottom: 0rem;
+  }
+
+  .social-tablet{
+    width:10%;
   }
 }
