@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 
   $('.addToCart').bind("click", function(){
-    document.getElementById('cartCount').style.display = "flex";
+    document.getElementById('cartCount').style.display = "flex";//displays the badge
     count++;
       addItem.innerHTML = count;
     })
@@ -51,6 +51,9 @@ $(document).ready(function(){
   
 
 });
+
+
+// smooth scrolling
 
 
 
