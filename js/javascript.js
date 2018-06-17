@@ -32,16 +32,22 @@ function validateEmail(regex) {
 
 
 
+// $('cartCount').addClass('display');
+
 $(document).ready(function(){ 
     var count = 0;
-    var display = document.getElementById("cartCount");
+    var addItem = document.getElementById("cartCount");
+
 
   $('.addToCart').bind("click", function(){
+    document.getElementById('cartCount').style.display = "flex";
     count++;
-      display.innerHTML = count;
+      addItem.innerHTML = count;
     })
 
-
+   
+        
+     
   
 
 });

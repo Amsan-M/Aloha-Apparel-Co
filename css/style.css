@@ -142,13 +142,39 @@ span.header-wrapper {
   font-size: 1rem;
 }
 
+.cart p{
+    min-width: 100%;
+    min-height: 100%;
+} 
+
+.count-wrapper{
+/* 
+  width: 2rem;
+  height: 2rem; */
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+/* .count-wrapper {
+  display: none;
+ 
+} */
+
+
 #cartCount {
   background-color: red;
   color: white;
-  border-radius: 50px;
-  width: 18px;
-  height: 18px;
+  border-radius: 25px;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
+  display:none;
+  justify-content: center;
+  align-items: center;
+ 
+
+  
 }
 
 .top-navigation-links {
