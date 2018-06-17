@@ -1,7 +1,5 @@
 /* general styling */
 
-
-
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -93,14 +91,11 @@ strong {
   text-shadow: none;
 }
 
-
 /* ===================================================================================================================== */
 
-                                      /* header  */
+/* header  */
 
 /* ===================================================================================================================== */
-
-
 
 header {
   display: flex;
@@ -180,13 +175,11 @@ span.header-wrapper {
   text-decoration: none;
 }
 
-
 /* ===================================================================================================================== */
 
-                                      /* BANNER */
+/* BANNER */
 
 /* ===================================================================================================================== */
-
 
 .banner {
   margin-top: 5%;
@@ -225,11 +218,11 @@ span.header-wrapper {
   display: block;
   z-index: 2;
   color: white;
-} 
+}
 
 /* ===================================================================================================================== */
 
-                                      /* about */
+/* about */
 
 /* ===================================================================================================================== */
 
@@ -241,8 +234,8 @@ span.header-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top:10%;
-  margin-bottom:10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .about-content {
@@ -261,10 +254,9 @@ span.header-wrapper {
   font-family: 'main-light';
 }
 
-
 /* ===================================================================================================================== */
 
-                                      /* SHOPPING CATEGORIES  */
+/* SHOPPING CATEGORIES  */
 
 /* ===================================================================================================================== */
 
@@ -287,10 +279,10 @@ span.men-category-wrapper {
   margin-bottom: 0.25rem;
   justify-content: center;
 }
+
 .men-category {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/mens-category.jpg);
 }
-
 
 span.trends-category-wrapper {
   flex-grow: 1;
@@ -299,10 +291,10 @@ span.trends-category-wrapper {
   display: flex;
   border-right: 0.25rem solid white;
 }
+
 .trends-category {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/trends-category.jpg);
 }
-
 
 span.glasses-category-wrapper {
   flex-grow: 1;
@@ -310,10 +302,10 @@ span.glasses-category-wrapper {
   height: 25%;
   border-bottom: 0.25rem solid white;
 }
+
 .glasses-category {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/glasses-category.jpg);
 }
-
 
 span.sales-category-wrapper {
   flex-grow: 1;
@@ -321,11 +313,11 @@ span.sales-category-wrapper {
   height: 25%;
   border-right: 0.25rem solid #fff;
 }
+
 .sales-category {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/sale-category.jpg);
   background-repeat: no-repeat;
 }
-
 
 span.bags-category-wrapper {
   flex-grow: 1;
@@ -342,7 +334,6 @@ span.womens-category-wrapper {
   width: 100%;
   height: 25%;
   border-top: 0.25rem solid #fff;
-  
 }
 
 .womens-category {
@@ -369,7 +360,7 @@ span.womens-category-wrapper {
 
 /* ===================================================================================================================== */
 
-                                      /* CAROUSSEL */
+/* CAROUSSEL */
 
 /* ===================================================================================================================== */
 
@@ -382,58 +373,34 @@ span.womens-category-wrapper {
   margin-top: 10%;
 }
 
-
 .carousel {
   width: 100%;
   height: 35rem;
-  /* align-content: center;
-  align-items: center;
-  display:flex;
-  flex-direction:column;*/
-  
-}  
+}
 
 .carousel p {
   font-size: 0.8rem;
   color: #969696;
   font-family: 'main';
-  margin-bottom:3%;
+  margin-bottom: 3%;
   text-align: center;
 }
 
-.carousel h4{
+.carousel h4 {
   text-align: center;
-  margin-bottom:3%;
-
+  margin-bottom: 3%;
 }
-
 
 .carousel-cell {
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: carousel-cell;
   text-align: center;
-  /* align-content: center;
-  align-items: center; */
 }
-
-/* 
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  align-content: center;
-  align-items: center;
-  line-height: 600px;
-  font-size: 14px;
-  color: black;
-} */
 
 .flickity-button {
-  display:none;
+  display: none;
 }
-
-
 
 .flickity-enabled .flickity-page-dots {
   position: absolute;
@@ -445,7 +412,6 @@ span.womens-category-wrapper {
   line-height: 1;
 }
 
-
 .addToCart {
   background-color: black;
   color: white;
@@ -456,31 +422,28 @@ span.womens-category-wrapper {
 
 /* =================================================================================================================== */
 
-                                        /* SIGN-UP */
+/* SIGN-UP */
 
 /* =================================================================================================================== */
-
 
 .sign-up {
   display: flex;
   flex-wrap: wrap;
- 
   width: 100%;
   color: white;
 }
 
-.sign-up-form{
+.sign-up-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5%;
 }
 
-.sign-up p{
-  margin:4%;
+.sign-up p {
+  margin: 4%;
   line-height: 2.25rem;
 }
-
 
 form {
   display: inline-block;
@@ -489,8 +452,9 @@ form {
   height: 2.7rem;
   margin-top: 10%;
 }
-placeholder{
-  margin-left:5%;
+
+placeholder {
+  margin-left: 5%;
 }
 
 button[type="submit"] {
@@ -511,8 +475,8 @@ button[type="submit"] {
   line-height: 0px;
 }
 
-input[type="email"] ::placeholder{
-  margin-left:5%;
+input[type="email"] ::placeholder {
+  margin-left: 5%;
 }
 
 label {
@@ -524,6 +488,7 @@ label {
   align-items: center;
   justify-content: center;
 }
+
 input[type="email"] {
   border-radius: 1.5rem;
   border: 0px;
@@ -547,7 +512,7 @@ input[type="email"] {
 
 /* =================================================================================================================== */
 
-                                      /* FOOTER */
+/* FOOTER */
 
 /* =================================================================================================================== */
 
@@ -555,18 +520,17 @@ footer {
   background: #242424;
   color: white;
   width: 100%;
- 
 }
 
 footer a {
   color: white;
-  font-size:0.9rem;
-  text-decoration:none;
-}
-footer p {
-  font-size:0.9rem;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
+footer p {
+  font-size: 0.9rem;
+}
 
 .contact {
   display: flex;
@@ -592,138 +556,49 @@ footer p {
   margin-top: 0.85rem;
   justify-content: center;
 }
-.social-mobile ul{
+
+.social-mobile ul {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
-.social-mobile li{
-  margin:5%;
+
+.social-mobile li {
+  margin: 5%;
 }
 
-.contact-link p{
-  margin-top:5%;
-  margin-bottom:5%;
+.contact-link p {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.aloha-adress{
-  color:#969696;
+.aloha-adress {
+  color: #969696;
 }
 
-.social-tablet{
-  display:none;
+.social-tablet {
+  display: none;
 }
-
-
-
-
-/* =================================================================================================================== */
-
-/* Media queries tablet */
 
 /* =================================================================================================================== */
 
 
 
-
-
-
-/* 
-@media screen and (max-width: 600px) {
-  footer li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .social ul {
-    display: flex;
-    justify-content: center;
-  }
-  .social a {
-    visibility: hidden;
-  }
-} */
-
+/* =================================================================================================================== */
+                                                        /* MEDIA QUERIES */
 /* -------------------------------------------------------------------------------------------------------------------- */
-
-/* footer for tablet and desktop   */
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
-/* 
-@media screen and (min-width: 600px) {
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-content: space-between;
-    margin-top: 0.5rem;
-  }
-  .address {
-    width: 50%;
-    text-align: left;
-    color: white;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-  }
-  .social {
-    width: 15%;
-    color: white;
-    margin-top: 0.5rem;
-    text-align: left;
-    font-size: 16px;
-    display: flex;
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
-
-
-
 
 
 /* -------------------------------------------------------------------------------------------------------------------- */
-
-/* BANNER for TABLET & DESKTOP*/
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
 
 @media screen and (min-width: 600px) {
-
-
   /* header */
-
-
-  span.header-wrapper{
+  span.header-wrapper {
     justify-content: space-between;
     align-items: center;
-    margin:0px;
+    margin: 0px;
   }
-  
   header {
     display: flex;
     justify-content: space-between;
@@ -731,13 +606,11 @@ footer p {
     flex-direction: row;
     width: 100%;
     height: 5rem;
-  } 
-
+  }
   .logo {
     order: 1;
     width: 7rem;
   }
-
   .cart {
     height: 50px;
     width: 15%;
@@ -745,13 +618,12 @@ footer p {
     background-position: top right;
     order: 3;
   }
-
   .top-navigation-links {
     border-top: none;
     text-align: center;
     order: 2;
     height: 3rem;
-    width: auto; 
+    width: auto;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -766,13 +638,9 @@ footer p {
     color: #e2574c;
     font-size: 16px;
   }
-
-
-
   /* banner  */
-
   .banner {
-    margin-top:1%;
+    margin-top: 1%;
   }
   .new-collection p {
     font-size: 1.5rem;
@@ -780,79 +648,41 @@ footer p {
   .new-collection h1 {
     font-size: 3rem;
   }
-
-
   /* shop section */
-
-
   .shop {
     height: 20rem;
     width: 100%;
   }
-
   span.men-category-wrapper {
     height: 50%;
     width: 45%;
     margin-bottom: 0.25rem;
     margin-right: 0.25rem;
   }
-  .men-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/mens-category.jpg);
-  }
-
-
   span.trends-category-wrapper {
     flex-grow: 1;
     width: 20%;
     height: 50%;
   }
-  .trends-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/trends-category.jpg);
-  }
-
-
   span.glasses-category-wrapper {
     width: 20%;
     height: 50%;
-
   }
-  .glasses-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/glasses-category.jpg);
-  }
-
-
   span.sales-category-wrapper {
     width: 20%;
     height: 50%;
   }
-  .sales-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/sale-category.jpg);
-    background-repeat: no-repeat;
-  }
-
-
   span.bags-category-wrapper {
     flex-grow: 1;
     width: 20%;
     height: 50%;
   }
-
-  .bags-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/bags-category.jpg);
-  }
-
   span.womens-category-wrapper {
     width: 36%;
     height: 50%;
     border-left: 0.25rem solid #fff;
     border-top: 0rem;
-    
   }
-
-  .womens-category {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/womens-category.jpg);
-  }
-
   .womens-category,
   .bags-category,
   .sales-category,
@@ -870,359 +700,124 @@ footer p {
     height: 100%;
     background-position: center;
   }
-
-/* carousel */
-
-.most-loved-products{
-  margin-top: 10%;
-
-
-
-}
-/* 
-.flickity-enabled .flickity-slider{
-  left:-10rem !;
-  /* I had to use  as the position was hardcoded */
-
-
-
-
-
+  /* carousel */
+  .most-loved-products {
+    margin-top: 10%;
+  }
   /* sign-up section */
-
   form {
     height: 3rem;
     margin-top: 0%;
     width: 50%;
-}
+  }
   button[type="submit"] {
-    border-radius:1.5rem;
+    border-radius: 1.5rem;
     height: 96%;
   }
-
-
   /* footer */
-
-/* 
-  footer{
-    height:15rem;
-  } */
-
-  .contact{
-  
+  .contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
   }
-
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:auto;
-    text-align:left;
-    margin-left:2%;
-
+    width: auto;
+    text-align: left;
+    margin-left: 2%;
   }
-
-
   .copyright,
   .contact-link,
-  .aloha-adress{
-
-    margin-bottom:2%;
-    
+  .aloha-adress {
+    margin-bottom: 2%;
   }
-
-
-
-
-.social-mobile{
-  display:none;
+  .social-mobile {
+    display: none;
+  }
+  .social-tablet {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    text-align: left;
+    line-height: 2rem;
+    margin-right: 5%;
+  }
+  .social-tablet a {
+    text-transform: uppercase;
+  }
 }
-
-.social-tablet{
-  display:block;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: auto;
-  text-align: left;
-  line-height: 2rem;
-  margin-right:5%;
-
- 
-}
-
-.social-tablet a{
-  text-transform:uppercase;
-}
-
-
-
-
-
-}  /* media 600px*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-/* shopping categories for tablet and desktop   */
+/* 
+/* multiple breakpoints for the shop section */ 
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-
-  
- 
-
-
-/* multiple breakpoints for the shop section */
 
 @media screen and (min-width: 900px) {
-
   span.header-wrapper {
     justify-content: space-evenly;
-
   }
-
-  .banner{
+  .banner {
     background-size: cover, 14rem, cover;
-  
     height: 40rem;
   }
-
-
-  .About{
+  .About {
     display: flex;
     justify-content: center;
   }
-
-  .About-Aloha{
+  .About-Aloha {
     width: 55%;
   }
-
-
   .shop {
     height: 26rem;
     width: 100%;
-    
   }
 }
 
-
-  @media screen and (min-width: 1240px) {
-
-
-    .shop {
-      height: 40rem;
-      width: 100%;
-     
-    }
-
-    .About{
-      margin-bottom:0px;
-    }
-
-    .About-Aloha {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-
-  .caroussel-section{
+@media screen and (min-width: 1240px) {
+  
+  .About {
+    margin-bottom: 0px;
+  }
+  .About-Aloha {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .shop {
+    height: 40rem;
+    width: 100%;
+  }
+  .caroussel-section {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
   }
-
-    .flickity-wrapper{
-  
-      width: 100%;
-      display: flex;
-    } 
-
-    .flickity-slider{
-      display:flex;
-      width:80%
-    
-    }
-
-    .carousel-cell{
-      width:28%;
-    }
-
-    .carousel-cell img{
-      width:100%;
-    }
-
-    
-.flickity-enabled .flickity-page-dots{
-      bottom:0rem;
-    }
-  }
-
-/* @media screen and (max-width: 600px) {
-  .sign-up {
+  .flickity-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 5rem;
   }
-  .sign-up-form {
+  .flickity-slider {
     display: flex;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 80%
   }
-  .sign-up-form h2 {
-    text-align: center;
-    line-height: 2rem;
-    margin-top: -0.5rem;
-    color: white;
-    font-family: Playfair;
-    font-size: 1.5rem;
-    font-style: italic;
+  .carousel-cell {
+    width: 28%;
   }
-  .sign-up-form p {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    line-height: 1.5rem;
-    margin-top: 1rem;
-    color: white;
-    font-family: Raleway;
-  }
-} */
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
-/* sign-up for tablet  */
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
-/* @media only screen and (max-width: 1240px) and (min-width: 600px) {
-  .sign-up {
-    margin-top: 2.5rem;
-  }
-  .form {
-    flex-direction: row;
-    width: 15rem;
-    margin-top: 1.5rem;
-    display: inline-flex;
-  }
-  .sign-up p {
-    color: white;
-    font-family: Raleway;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  .sign-up h2 {
-    font-family: PlayfairDisplay;
-    font-size: 2rem;
-    font-style: italic;
-    color: white;
-  }
-} */
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-/* sign-up for desktop min width:1240px   */
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-/* @media screen and (min-width: 1240px) {
-  .sign-up {
-    /* height:30rem; */
-
-/* width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 5rem;
-  }
-  .sign-up-form {
-    display: flex;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .sign-up-form h2 {
-    text-align: center;
-    line-height: 2.5rem;
-    color: white;
-    font-family: PlayfairDisplay;
-    font-size: 2rem;
-  }
-  .sign-up-form p {
-    margin-left: 15rem;
-    margin-right: 15rem;
-    line-height: 2.25rem;
-    color: white;
-    font-family: Raleway;
-  }
-  form { */
-
-/* display: inline-flex; */
-
-/* flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0px;
-    width: 20%;
-  }
-  label {
+  .carousel-cell img {
     width: 100%;
-    height: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
-  input[type="email"] {
-    border-radius: 1.5rem;
-    border: 0px;
-    width: 100%;
-    height: 100%;
+  .flickity-enabled .flickity-page-dots {
+    bottom: 0rem;
   }
-  button[type="submit"] {
-    border-radius: 1rem;
-    background: #e2574c;
-    border: 0px;
-    color: white;
-    font-size: 16px;
-    padding-right: 0px;
-    margin-right: 1%;
-  }
-  .sign-up-image-background {
-    background-image: url(images/wave-bkgd.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-}  */
+}
