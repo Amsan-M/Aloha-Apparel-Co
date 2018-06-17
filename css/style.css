@@ -389,9 +389,9 @@ span.womens-category-wrapper {
   /* align-content: center;
   align-items: center;
   display:flex;
-  flex-direction:column;
-  */
-} 
+  flex-direction:column;*/
+  
+}  
 
 .carousel p {
   font-size: 0.8rem;
@@ -408,43 +408,16 @@ span.womens-category-wrapper {
 }
 
 
-
-.carousel-cell1{
-
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.carousel-cell2 {
+.carousel-cell {
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: carousel-cell;
   text-align: center;
-  align-content: center;
-  align-items: center;
+  /* align-content: center;
+  align-items: center; */
 }
 
-.carousel-cell3 {
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-}
-
-.carousel-cell4 {
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-} 
-
+/* 
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -454,15 +427,13 @@ span.womens-category-wrapper {
   line-height: 600px;
   font-size: 14px;
   color: black;
+} */
+
+.flickity-button {
+  display:none;
 }
 
-.flickity-prev-next-button .flickity-button-icon {
-  fill: transparent;
-}
 
-.flickity-prev-next-button.flickity-button {
-  background: none;
-}
 
 .flickity-enabled .flickity-page-dots {
   position: absolute;
@@ -493,9 +464,16 @@ span.womens-category-wrapper {
 .sign-up {
   display: flex;
   flex-wrap: wrap;
-  height: 25rem;
+ 
   width: 100%;
   color: white;
+}
+
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
 }
 
 .sign-up p{
@@ -577,8 +555,7 @@ footer {
   background: #242424;
   color: white;
   width: 100%;
-  display:flex;
-  flex-wrap:wrap;
+ 
 }
 
 footer a {
@@ -598,8 +575,8 @@ footer p {
   width: 100%;
   justify-content: center;
   align-content: center;
-  margin-top: 0.5rem;
-  height: 20rem;
+  padding-top: 5%;
+  height: auto;
 }
 
 .address {
@@ -709,20 +686,23 @@ footer p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries  */
 
 
-/* -------------------------------------------------------------------------------------------------------------------- */
 
-/* HEADER & NAVIGATION for TABLET & DESKTOP */
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
- @media screen and (min-width: 600px) {
-
- 
-
-} 
 
 
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -893,21 +873,28 @@ footer p {
 
 /* carousel */
 
+.most-loved-products{
+  margin-top: 10%;
+
+
+
+}
+/* 
 .flickity-enabled .flickity-slider{
-  left:-10rem !important;
-  /* I had to use important as the position was hardcoded */
-} 
+  left:-10rem !;
+  /* I had to use  as the position was hardcoded */
+
 
 
 
 
   /* sign-up section */
 
-  form{
+  form {
     height: 3rem;
-    margin-top: 10%;
-    width:50%;
-  }
+    margin-top: 0%;
+    width: 50%;
+}
   button[type="submit"] {
     border-radius:1.5rem;
     height: 96%;
@@ -978,7 +965,7 @@ footer p {
 
 
 
-} 
+}  /* media 600px*/
 
 
 
@@ -1008,6 +995,29 @@ footer p {
 /* multiple breakpoints for the shop section */
 
 @media screen and (min-width: 900px) {
+
+  span.header-wrapper {
+    justify-content: space-evenly;
+
+  }
+
+  .banner{
+    background-size: cover, 14rem, cover;
+  
+    height: 40rem;
+  }
+
+
+  .About{
+    display: flex;
+    justify-content: center;
+  }
+
+  .About-Aloha{
+    width: 55%;
+  }
+
+
   .shop {
     height: 26rem;
     width: 100%;
@@ -1017,10 +1027,55 @@ footer p {
 
 
   @media screen and (min-width: 1240px) {
+
+
     .shop {
       height: 40rem;
       width: 100%;
      
+    }
+
+    .About{
+      margin-bottom:0px;
+    }
+
+    .About-Aloha {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+  .caroussel-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+    .flickity-wrapper{
+  
+      width: 100%;
+      display: flex;
+    } 
+
+    .flickity-slider{
+      display:flex;
+      width:80%
+    
+    }
+
+    .carousel-cell{
+      width:28%;
+    }
+
+    .carousel-cell img{
+      width:100%;
+    }
+
+    
+.flickity-enabled .flickity-page-dots{
+      bottom:0rem;
     }
   }
 

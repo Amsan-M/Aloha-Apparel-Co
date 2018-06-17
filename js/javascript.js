@@ -46,3 +46,29 @@ $(document).ready(function(){
 
 });
 
+
+
+function scrollTo(element) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.offsetTop
+    });
+  }
+  
+  document.getElementById("1").addEventListener('click', () => {
+    scrollTo(document.getElementById("about"));
+  });
+  
+  document.getElementById("2").addEventListener('click', () => {
+    scrollTo(document.getElementById("shop"));  
+  });
+  
+  document.getElementById("3").addEventListener('click', () => {
+    scrollTo(document.getElementById("featured"));  
+  });
+  
+  document.getElementById("4").addEventListener('click', () => {
+    scrollTo(document.getElementById("updates"));   
+  });
+
