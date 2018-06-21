@@ -1,4 +1,4 @@
-console.log("Hello");
+
 
 $(document).ready(function (e) {
     $('#btnValidate').click(function () {
@@ -28,11 +28,10 @@ function validateEmail(regex) {
 }
 
 
-// add to cart update
 
 
 
-// $('cartCount').addClass('display');
+
 
 $(document).ready(function(){ 
     var count = 0;

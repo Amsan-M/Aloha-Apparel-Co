@@ -1,3 +1,5 @@
+/* Mobile */
+
 /* general styling */
 
 .screen-reader-text {
@@ -105,7 +107,7 @@ header {
   display: flex;
 }
 
-span.header-wrapper {
+.header-wrapper {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +124,6 @@ span.header-wrapper {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
-  align-items: left;
   height: 3rem;
   width: 50%;
   order: 1;
@@ -134,8 +135,6 @@ span.header-wrapper {
   background-position: top right;
   height: 3rem;
   width: 50%;
-  align-items: right;
-  align-content: right;
   background-repeat: no-repeat;
   order: 2;
   display: flex;
@@ -146,24 +145,16 @@ span.header-wrapper {
   font-size: 1rem;
 }
 
-.cart p{
-    min-width: 100%;
-    min-height: 100%;
-} 
-
-.count-wrapper{
-/* 
-  width: 2rem;
-  height: 2rem; */
-  justify-content: center;
-  align-items: center;
-  display:flex;
+.cart p {
+  min-width: 100%;
+  min-height: 100%;
 }
 
-/* .count-wrapper {
-  display: none;
- 
-} */
+.count-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 
 #cartCount {
@@ -173,12 +164,9 @@ span.header-wrapper {
   width: 1rem;
   height: 1rem;
   text-align: center;
-  display:none;
+  display: none;
   justify-content: center;
   align-items: center;
- 
-
-  
 }
 
 .top-navigation-links {
@@ -257,15 +245,15 @@ span.header-wrapper {
 /* ===================================================================================================================== */
 
 .About {
-  margin-bottom: 5%;
+  margin-bottom: 0%;
 }
 
 .About-Aloha {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .about-content {
@@ -301,7 +289,7 @@ span.header-wrapper {
   margin-bottom: 3rem;
 }
 
-span.men-category-wrapper {
+.men-category-wrapper {
   height: 25%;
   width: 100%;
   flex-grow: 2;
@@ -315,7 +303,7 @@ span.men-category-wrapper {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/mens-category.jpg);
 }
 
-span.trends-category-wrapper {
+.trends-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -327,7 +315,7 @@ span.trends-category-wrapper {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/trends-category.jpg);
 }
 
-span.glasses-category-wrapper {
+.glasses-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -338,7 +326,7 @@ span.glasses-category-wrapper {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/glasses-category.jpg);
 }
 
-span.sales-category-wrapper {
+.sales-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -350,7 +338,7 @@ span.sales-category-wrapper {
   background-repeat: no-repeat;
 }
 
-span.bags-category-wrapper {
+.bags-category-wrapper {
   flex-grow: 1;
   width: 45%;
   height: 25%;
@@ -360,7 +348,7 @@ span.bags-category-wrapper {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(images/bags-category.jpg);
 }
 
-span.womens-category-wrapper {
+.womens-category-wrapper {
   flex-grow: 2;
   width: 100%;
   height: 25%;
@@ -451,6 +439,10 @@ span.womens-category-wrapper {
   border: none;
 }
 
+.addToCart:focus {
+  outline: none;
+}
+
 /* =================================================================================================================== */
 
 /* SIGN-UP */
@@ -503,11 +495,11 @@ button[type="submit"] {
   padding: 0px;
   color: white;
   font-size: 0.9rem;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 0px;
 }
 
-input[type="email"] ::placeholder {
+::placeholder {
   margin-left: 5%;
 }
 
@@ -526,6 +518,13 @@ input[type="email"] {
   border: 0px;
   height: 100%;
   width: 100%;
+}
+
+input#txtEmail::placeholder {
+  font-family: 'Raleway';
+  padding-left: 5%;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .sign-up-image-background {
@@ -554,10 +553,9 @@ footer {
   width: 100%;
 }
 
-footer i{
+footer i {
   font-family: 'Playfair Display';
   font-size: 1rem;
-  
 }
 
 footer a {
@@ -565,11 +563,6 @@ footer a {
   font-size: 0.9rem;
   text-decoration: none;
 }
-
-/* footer p {
-
-
-} */
 
 .contact {
   display: flex;
@@ -579,14 +572,14 @@ footer a {
   justify-content: center;
   align-content: center;
   padding-top: 3%;
-  padding-bottom:3%;
+  padding-bottom: 3%;
   height: auto;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .address {
-   width: 100%;
+  width: 100%;
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -614,6 +607,7 @@ footer a {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 .contact-link a {
   text-decoration: underline;
 }
@@ -626,48 +620,45 @@ footer a {
   display: none;
 }
 
-.social-tablet i{
-  display:flex;
+.social-tablet i {
+  display: flex;
 }
 
 .copyright p,
 .contact-link p,
 .contact-link a,
-.aloha-adress p{
+.aloha-adress p {
   font-family: 'Playfair Display';
 }
 
 /* =================================================================================================================== */
 
-
-
 /* =================================================================================================================== */
-                                                        /* MEDIA QUERIES */
-/* -------------------------------------------------------------------------------------------------------------------- */
 
+/* MEDIA QUERIES */
+
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 600px) {
 
-
   /* titles */
-
-.most-loved-products h1,
-.sign-up-title-wrapper h1,
-.About-Aloha h1{
-  font-size: 2.8rem;
-  font-style: italic;
-  font-family: 'Playfair Display';
-}
-
-strong {
-  font-size: 2.8rem;
-}
+  .most-loved-products h1,
+  .sign-up-title-wrapper h1,
+  .About-Aloha h1 {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-family: 'Playfair Display';
+  }
+  strong {
+    font-size: 2.8rem;
+  }
 
 
   /* header */
-  span.header-wrapper {
+
+  .header-wrapper {
     justify-content: space-between;
     align-items: center;
     margin: 0px;
@@ -711,7 +702,10 @@ strong {
     color: #e2574c;
     font-size: 16px;
   }
+
+
   /* banner  */
+
   .banner {
     margin-top: 1%;
   }
@@ -722,45 +716,48 @@ strong {
     font-size: 3rem;
   }
 
+
   /* about */
-  .about-content p{
-    font-size:1rem;
+
+  .about-content p {
+    font-size: 1rem;
   }
 
+
   /* shop section */
+
   .shop {
     height: 20rem;
     width: 100%;
   }
-
-  .shop h3{
-    font-size:2rem;
+  .shop h3 {
+    font-size: 2rem;
   }
-  span.men-category-wrapper {
+  .men-category-wrapper {
     height: 50%;
     width: 45%;
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
   }
-  span.trends-category-wrapper {
+  .trends-category-wrapper {
     flex-grow: 1;
     width: 20%;
     height: 50%;
   }
-  span.glasses-category-wrapper {
+  .glasses-category-wrapper {
     width: 20%;
     height: 50%;
   }
-  span.sales-category-wrapper {
+  .sales-category-wrapper {
     width: 20%;
     height: 50%;
   }
-  span.bags-category-wrapper {
+  .bags-category-wrapper {
     flex-grow: 1;
     width: 20%;
     height: 50%;
   }
-  span.womens-category-wrapper {
+  .womens-category-wrapper {
     width: 36%;
     height: 50%;
     border-left: 0.5rem solid #fff;
@@ -783,21 +780,36 @@ strong {
     height: 100%;
     background-position: center;
   }
+
+
   /* carousel */
+
   .most-loved-products {
     margin-top: 10%;
   }
+
+
   /* sign-up section */
+
   form {
     height: 3rem;
     margin-top: 0%;
     width: 50%;
   }
+  input#txtEmail::placeholder {
+    font-family: 'Raleway';
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
   button[type="submit"] {
     border-radius: 1.5rem;
     height: 96%;
   }
+
+
   /* footer */
+
   .contact {
     display: flex;
     flex-wrap: wrap;
@@ -829,43 +841,31 @@ strong {
     width: 20%;
     text-align: left;
     line-height: 2rem;
-    margin-right: 5%;
   }
   .social-tablet a {
     text-transform: uppercase;
     display: inline-flex;
-    align-items:center;
-    width:100%;
+    align-items: center;
+    width: 100%;
   }
-
-  .social-tablet h5{
- 
-    font-family:'Raleway';
+  .social-tablet h5 {
+    font-family: 'Raleway';
     font-weight: 300;
-    text-transform:capitalize;
+    text-transform: capitalize;
   }
-
-  .social-tablet i::before{
+  .social-tablet i::before {
     width: 2rem;
   }
 }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-/* 
-/* multiple breakpoints for the shop section */ 
+/* multiple breakpoints for the shop section */
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-
 @media screen and (min-width: 900px) {
-
- 
-
-
-
-
-  span.header-wrapper {
+  .header-wrapper {
     justify-content: space-evenly;
   }
   .banner {
@@ -877,7 +877,7 @@ strong {
     justify-content: center;
   }
   .About-Aloha {
-    width: 55%;
+    width: 65%;
   }
   .shop {
     height: 26rem;
@@ -887,24 +887,21 @@ strong {
 
 @media screen and (min-width: 1240px) {
 
-   /* titles */
-
-.most-loved-products h1,
-.sign-up-title-wrapper h1,
-.About-Aloha h1{
-  font-size: 3.5rem;
-  font-style: italic;
-  font-family: 'Playfair Display';
-}
-
-strong {
-  font-size: 3.5rem;
-}
-
-  .new-collection h1{
-    font-size:3.5rem;
-  }
+  /* titles */
   
+  .most-loved-products h1,
+  .sign-up-title-wrapper h1,
+  .About-Aloha h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-family: 'Playfair Display';
+  }
+  strong {
+    font-size: 3.5rem;
+  }
+  .new-collection h1 {
+    font-size: 3.5rem;
+  }
   .About {
     margin-bottom: 0px;
   }
@@ -912,18 +909,18 @@ strong {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
-  .about-content p{
-    font-size:1.2rem;
+  .about-content p {
+    font-size: 1.2rem;
   }
   .shop {
     height: 40rem;
     width: 100%;
   }
-  .shop h3{
-    font-size:2.5rem;
+  .shop h3 {
+    font-size: 2.5rem;
   }
   .caroussel-section {
     display: flex;
@@ -947,8 +944,15 @@ strong {
   .flickity-enabled .flickity-page-dots {
     bottom: 0rem;
   }
-
-  .social-tablet{
-    width:10%;
+  .sign-up p {
+    font-size: 1.2rem;
+    width: 64%;
+  }
+  .address {
+    margin-left: 5%;
+  }
+  .social-tablet {
+    width: 10%;
+    margin-right: 5%;
   }
 }
